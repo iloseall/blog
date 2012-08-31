@@ -2,7 +2,16 @@
 layout: default
 title: iloseall's blog
 ---
-
+<script>
+	var l="http://iloseall.github.com/".length;
+	function process_url(old_url)
+	{
+		//http://iloseall.github.com/2008/10/18/how-i-turned-down-300k.html
+		var v=old_url.substring(0,l)+"blog/"+old_url.substring(l+1,10000);
+		return v;
+	}
+	//alert(process_url("http://iloseall.github.com/2008/10/18/how-i-turned-down-300k.html"));
+</script>
 <div id="home">
   <h1>Blog Posts</h1>
   <ul class="posts">
